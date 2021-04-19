@@ -30,7 +30,6 @@ export default function WeatherFunc() {
         navigator.geolocation.getCurrentPosition(pollWeather)
     }, [])
 
-    console.log(weather);
     let content = <div className='loading'>loading weather...</div>;
 
     if (weather) {
